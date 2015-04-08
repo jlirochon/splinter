@@ -32,7 +32,7 @@ try:
     from splinter.driver.djangoclient import DjangoClient
     _DRIVERS['django'] = DjangoClient
 except ImportError:
-    pass
+    raise
 
 try:
     import flask  # noqa
